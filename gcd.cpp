@@ -5,7 +5,7 @@ using namespace std;
 
 int gcd(int number1, int number2) {
   int temp;
-  while(number2 != 0) {
+  while (number2 != 0) {
     temp = number2;
     number2 = number1 % number2;
     number1 = temp;
@@ -14,7 +14,8 @@ int gcd(int number1, int number2) {
 }
 
 int gcd_recursive(int number1, int number2) {
-  if(number2 == 0) return number1;
+  if (number2 == 0)
+    return number1;
 
   return gcd(number2, number1 % number2);
 }
